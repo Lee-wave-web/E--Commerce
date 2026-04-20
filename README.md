@@ -23,7 +23,7 @@ ecommerce_project/
 │       └── js/
 ⚙️ Setup Instructions
 Clone the repository
-git clone https://github.com/leeleena044/ecommerce_project.git
+git clone https://github.com/Lee-wave-web/ecommerce_project.git
 cd ecommerce_project
 Create virtual environment
 python -m venv venv
@@ -77,4 +77,4 @@ Admin dashboard with analytics
 Order tracking system
 REST Framework integration
 
-GitHub: https://github.com/leeleena044
+GitHub: https://github.com/Lee-wave-web

@@ -1,0 +1,54 @@
+
+{% extends "store/base.html" %}
+
+{% block content %}
+
+<h2>Product List</h2>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Action</th>
+    </tr>
+
+    {% for product in products %}
+    <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.stock }}</td>
+        <td>
+            <a href="{% url 'edit_product' product.id %}">Edit</a> |
+            <a href="{% url 'delete_product' product.id %}" onclick="return confirm('Are you sure?')">
+                Delete
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
+
+
+
+Rest of the parts you will do
+cutomer API and order API.
+what we have done in product API the same steps will do for customer and order.
+
+
+To see the flow how to connect and work:
+
+In browser inspect
+go to network tab
+Enable preserve log
+Click fetch/XHR
+Fill form in frontend and click save
+You see url in name column and click that url
+Select header tab to see method,content type,status code
+Select payload tab to see how data come from frontend (its like json format)
+Select response tab to see response message from backend to frontend.
+

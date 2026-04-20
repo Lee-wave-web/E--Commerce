@@ -1,0 +1,103 @@
+/* ----------- GENERAL PAGE STYLE ----------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* ----------- HEADER ----------- */
+
+h1 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* ----------- NAVIGATION ----------- */
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* ----------- CONTENT AREA ----------- */
+
+hr {
+    margin: 15px 0;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+/* ----------- TABLE STYLE ----------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ----------- FORM STYLE ----------- */
+
+form {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ----------- BUTTON ----------- */
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+
+

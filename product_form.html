@@ -1,0 +1,27 @@
+{% extends "store/base.html" %}
+
+{% block content %}
+
+{% if product %}
+<h2>Edit Product</h2>
+{% else %}
+<h2>Add Product</h2>
+{% endif %}
+
+<form id="productForm">
+    {% csrf_token %}
+
+    <input type="text" id="name" name="name" placeholder="Name" value="{{ product.name|default:'' }}"><br><br>
+
+    <input type="text" id="category" name="category" placeholder="Category"
+        value="{{ product.category|default:'' }}"><br><br>
+
+    <input type="number" id="price" name="price" placeholder="Price" value="{{ product.price|default:'' }}"><br><br>
+
+    <input type="number" id="stock" name="stock" placeholder="Stock" value="{{ product.stock|default:'' }}"><br><br>
+
+    <button type="submit">Save</button>
+</form>
+
+{% endblock %}
+
